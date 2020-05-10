@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "test": "jest",
-    "example": "rollup -c example/rollup.config.js",
+    "example": "npm run build && rollup -c example/rollup.config.js",
     "build": "ts-node build",
     "prepublishOnly": "npm run build"
   },
